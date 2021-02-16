@@ -1,0 +1,66 @@
+body {
+    font-family: Fantasy, Verdana, Arial, "san serif";
+    background-color: #44CCE3;
+    padding: 25px;
+    font-size: 110%;
+}
+
+div#content{
+  padding: auto 30px 20px 30px;
+  width: 95%;
+  margin: 10px;
+  margin-bottom: 20px;
+}
+
+div#content {
+    padding: 40px;
+    background-color: lightblue;
+    border: solid 4px #0091AB;
+    border-radius: 30px;
+    height: 80vh;
+}
+
+h1, h2, h3 {
+    font-family: cursive;
+    color: #00363B;
+    font-size: 200%;
+}
+
+img {
+    float: right;
+    width: 450px;
+    height: auto;
+    margin-left: 10px;
+}
+
+img{
+    border-image: linear-gradient(#dfc9e2, #a99cc8, #c35cad, #7d2c6f) 90;
+}
+
+a {
+    text-decoration: none;
+    color: #05357D;
+}
+a:hover {
+    text-decoration: underline;
+    text-decoration-style: wavy;
+}
+
+input, textarea, label {
+  margin-bottom: 15px;
+}
+
+form {
+  border: solid 4px #0091AB;
+  border-radius: 30px;
+  padding: 10px;
+  display: inline-block;
+  background-color: lightblue;
+}
+
+div#output{
+  padding: auto 30px 20px 30px;
+  width: 95%;
+  margin: 10px;
+  margin-bottom: 20px;
+}

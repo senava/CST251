@@ -1,11 +1,59 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<title>Lab X - Subject/Topic</title>
-	<link rel="stylesheet" type="text/css" href="../css/site.css">
-	<link rel="stylesheet" type="text/css" href="css/lab.css">
+	<title>Lab 6 - More Complicated HTML</title>
+	<link rel="stylesheet" type="text/css" href="css/index.css">
 </head>
+
 <body>
+	<div id="content">
+		<h1>Lab 6: More Complicated HTML</h1>
+		<p>The big idea for this lab is to create an html file and then style it
+			 with a CSS file.</p>
+
+		<img src="img/castle-full.png" id="castle" width=300>
+
+		<h2>Challenges</h2>
+		<p>I had no difficulties for this lab. I was just overwhelmed with all of
+			 the information that was being given. It was a lot to take in but once
+		 	 doing it one step at a time, I was able to understand everything clearly.
+		</p>
+
+		<h2>Results</h2>
+		<p>The results for this lab is this browser you are currently looking at.
+			 I liked the way I was able to make this page look different from the
+		 	 rest. Not having it all just with a blank background. By having the
+		 	 background look a bit different I had to link my CSS file.</p>
+
+	</div>
+
+
+	<div id="output">
+		<form action="https://www.google.com/search" method="GET" target="_new">
+			<label> Search: <input name="q" type="text"></label><br>
+			<label> Password: <input name="pw" type="password"></label><br>
+			<label> Agree: <input name="agree" type="checkbox" value="yes"></label><br>
+
+			Gender:
+			<label><input name="gender" type="radio" value="Male">Male</label>
+			<label><input name="gender" type="radio" value="Female">Female</label><br>
+
+			<label> Biography: <textarea name="essay"></textarea></label><br>
+			<label> Favorite Social Media:
+				<select name="media">
+					<option selected disabled>Choose your favorite social media</option>
+					<option value="Snapchat">Snapchat</option>
+					<option value="Twitter">Twitter</option>
+					<option value="Instagram">Instagram</option>
+				</select>
+			</label><br>
+		<input type="submit" value="Search">
+	</div>
+
+	<nav>
+		<a href="../index.html">--Back to Homepage--</a>
+	</nav>
+
 
 </body>
 </html>
