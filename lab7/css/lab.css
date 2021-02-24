@@ -1,0 +1,43 @@
+html {
+  background-color: thistle;
+}
+body {
+  font-family: cursive;
+  font-size: 120%;
+  border-style: inset;
+  border-width: medium;
+  border-color: #c31482;
+  background-image: linear-gradient(40deg, #c1e0f7, #a4def9, #cfbae1, #c59fc9,
+                    transparent);
+  margin: 10px;
+  padding: 15px;
+}
+
+.disneyland {
+  float: right;
+  margin: 20px;
+  padding: 10px;
+  background-color: #ffffff00;
+  background-image: repeating-linear-gradient(48deg, #f5b9c4, #f398a9,
+                    transparent 60px);
+  border-radius: 25px;
+}
+
+img {
+  border-radius: 10px;
+}
+
+h1#title {
+  font-size: 45px;
+}
+
+h2{
+  text-decoration: underline;
+  text-decoration-style: wavy;
+  text-decoration-color: darkred;
+}
+
+a {
+  padding: 10px;
+  margin: 10px;
+}
