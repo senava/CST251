@@ -1,0 +1,93 @@
+
+body{
+  background-image: url("../image/orange.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+}
+
+main{
+  background-image: linear-gradient(143deg,#FCFFBD9B,#FFA46A,#FF9346,#FFE36D0E)
+}
+
+header, footer, nav, article, section, main{
+  border:  dashed 3px lightcoral;
+  border-radius: 25px;
+  padding: 9px;
+  margin: 10px;
+}
+
+header{
+  background-color: rgb(255, 164, 106,0.65);
+  color: bisque;
+}
+
+h1{
+  text-align: center;
+  text-shadow: 7px 3px 3px grey;
+  font-family: cursive, Arial, serif;
+  font-size: 225%;
+}
+
+b{
+  font-size: 120%;
+  font-weight: bold;
+  font-style: italic;
+  color: #4F2A59;
+}
+
+h2{
+  color: firebrick;
+  text-decoration: underline;
+  text-decoration-style: double;
+  text-decoration-color: #f24607b3;
+}
+
+.minor-section h2{
+  font-family: fantasy, Arial, sans-serif;
+  font-size: 175%;
+}
+
+.minor-section p{
+  font-family: cursive, monospace, sans-serif;
+  font-size: 120%;
+}
+
+img{
+  padding: 35px 75px 35px 75px;
+  margin: 35px;
+  border-style: double ridge;
+  border-width: 4px 5px;
+  border-radius: 70px;
+  border-color: #fd2121;
+  background-color: #F28D52;
+}
+
+#cat{
+  max-width: 100%;
+  height: 200px;
+  width: auto;
+}
+
+#cloud{
+  max-width: 100%;
+  height: 250px;
+  width: inherit;
+}
+
+footer{
+  background-color: rgba(183, 49, 19, 0.65);
+}
+
+nav{
+  background-color: rgba(255, 125, 20, 0.55);
+}
+
+.minor-section{
+  border: double 4px #f3510cf7;
+  border-radius: 15px;
+  background-color: #ffa977;
+  padding: 5px;
+  text-align: center;
+}
