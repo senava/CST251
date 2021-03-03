@@ -1,0 +1,62 @@
+
+body{
+  background: cornflowerblue;
+  background-image: url("../img/blue-sky.jpg");
+  background-repeat: space;
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  padding: 5px;
+  border: 10px;
+  margin: 30px;
+}
+
+header{
+  background-color: #6ab6cfe0;
+  background-image: url("../img/welcome.jpg");
+  background-repeat: round;
+  background-size: inherit;
+  background-attachment: initial;
+  height: 225px;
+  padding: 10px;
+  margin: 10px;
+  text-align: center;
+  border-radius: 50px;
+}
+
+.major-section, .minor-section, .lab-section{
+  font-family: cursive, monospace, sans-serif;
+}
+
+main{
+  background-color: purple;
+  background-image: linear-gradient(#63e9ffdd, #229ef9c2, #2252da);
+  border: double 8px black;
+  border-radius: 20px;
+}
+
+.major-section h1{
+  width: 400px;
+}
+
+.lab-section{
+  background-color: #165d90ad;
+  background-image: linear-gradient(#3c5be0bf, #0072ffbf, #1986efbf, #24d7ffbf);
+}
+
+#content, #lab{
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
+img{
+  width: 150px;
+  float: right;
+  padding: 20px;
+  border-radius: 70px;
+  filter: drop-shadow(15px 10px 15px black);
+}
+
+#my-image :hover{
+
+}
