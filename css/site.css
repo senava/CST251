@@ -24,10 +24,19 @@ header{
   border-radius: 50px;
 }
 
-.minor-section, a{
+p, li{
   font-family: 'Happy Monkey', cursive, sans-serif;
   padding-inline-start: 20px;
   line-height: 25px;
+  font-size: 20px;
+}
+
+h2{
+  font-family: 'Crafty Girls', cursive, sans-serif;
+  padding-inline-start: 20px;
+  font-size: 30px;
+  margin-bottom: 5px;
+  color: white;
 }
 
 main{
@@ -39,14 +48,6 @@ main{
 
 .major-section h1{
   width: 400px;
-}
-
-h2{
-  font-family: 'Crafty Girls', cursive, sans-serif;
-  padding-inline-start: 20px;
-  font-size: 30px;
-  margin-bottom: 5px;
-  color: white;
 }
 
 .lab-section{
@@ -68,5 +69,5 @@ img{
 }
 
 #my-image :hover{
-
+  filter: grayscale();
 }
