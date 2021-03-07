@@ -24,8 +24,10 @@ header{
   border-radius: 50px;
 }
 
-.major-section, .minor-section, .lab-section{
-  font-family: cursive, monospace, sans-serif;
+.minor-section, a{
+  font-family: 'Happy Monkey', cursive, sans-serif;
+  padding-inline-start: 20px;
+  line-height: 25px;
 }
 
 main{
@@ -37,6 +39,14 @@ main{
 
 .major-section h1{
   width: 400px;
+}
+
+h2{
+  font-family: 'Crafty Girls', cursive, sans-serif;
+  padding-inline-start: 20px;
+  font-size: 30px;
+  margin-bottom: 5px;
+  color: white;
 }
 
 .lab-section{
