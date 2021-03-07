@@ -1,0 +1,79 @@
+
+body{
+  background-color: cornflowerblue;
+  background-image: url(../images/watercolor.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  padding: 5px;
+  border: 10px;
+  margin: 30px;
+}
+
+header{
+  background-color: #6ab6cfe0;
+  background-image: url("../../img/flower.jpg");
+  background-repeat: round;
+  background-size: inherit;
+  background-attachment: initial;
+  height: 225px;
+  padding: 10px;
+  margin: 10px;
+  text-align: center;
+  border-radius: 50px;
+}
+
+main{
+  background-color: purple;
+  background-image: linear-gradient(#63e9ffdd, #229ef9c2, #2252da);
+  border-style: solid dotted;
+  border-radius: 20px;
+  border-width: 5px;
+  padding: 5px;
+}
+
+div.gallery{
+  margin: 10px;
+  margin-left: 10%;
+  border: 5px double #df90e8;
+  width: 380px;
+  padding: 10px;
+}
+
+div.gallery img{
+  width: 100%;
+  height: auto;
+}
+
+h1{
+  font-family: 'Bad Script', cursive, sans-serif;
+  font-size: 45px;
+  color: white;
+  padding: 23px;
+}
+
+a{
+  font-family: 'Londrina Outline', cursive, sans-serif;
+  font-size: 24px;
+  color: #f6eaf9;
+  padding: 20px;
+}
+
+h2{
+  font-family: 'Crafty Girls', cursive, sans-serif;
+  padding-inline-start: 20px;
+  font-size: 30px;
+  margin-bottom: 5px;
+  color: darkmagenta;
+}
+
+p{
+  font-family: 'Happy Monkey', cursive, sans-serif;
+  padding-inline-start: 20px;
+  line-height: 25px;
+}
+
+footer{
+  padding: 10px;
+}
