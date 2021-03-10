@@ -1,0 +1,136 @@
+
+body{
+  background-color: cornflowerblue;
+  background-image: url(../img/colurful.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  max-height: 50%;
+}
+
+.major-section{
+  display: inline-block;
+  right: 150px;
+  margin: 10px;
+  width: 60%;
+  min-width: 300px;
+  padding: 20px;
+  background-image: linear-gradient(#FFC6B4,#E8D2A4,#FDFFA7,#BFFFC8,#A7FAFF);
+}
+
+div#aside{
+  display: inline-block;
+}
+
+#sidebar{
+  display: inline-block;
+  right: 150px;
+  margin: 10px;
+  width: 33.33%;
+  min-width: 300px;
+  padding-left: 15px;
+  padding: 10px;
+  background-image: linear-gradient(#B7B8FF,#B8A7E8,#E4C4FF,#DCA7E8,#FFB7F2);
+}
+
+h2#facts{
+  text-align: center;
+}
+
+#sidebar p{
+  text-align: center;
+}
+
+.title{
+  width: 500px;
+  height: auto;
+  margin: 55px auto;
+  border-radius: 25px;
+  background-color: #6495eda1;
+}
+
+h1{
+  text-align: center;
+  border: dashed 3px;
+  border-radius: 25px;
+  padding: 4px;
+  font-family: 'Bad Script', cursive, sans-serif;
+  font-size: 35px;
+  color: white;
+}
+
+h2{
+  font-family: 'Crafty Girls', cursive, sans-serif;
+  padding: 5px;
+  font-size: 30px;
+  margin-bottom: 5px;
+  color: darkmagenta;
+}
+
+p{
+  font-family: 'Happy Monkey', cursive, sans-serif;
+  padding: 5px;
+  line-height: 20px;
+}
+
+a{
+  font-family: 'Londrina Outline', cursive, sans-serif;
+  font-size: 30px;
+  margin: 20px;
+  margin-top: 30px;
+  color: black;
+  padding: 10px;
+  position: sticky;
+  background-image: linear-gradient(45deg, #C35792,#F1B4C8,#F5CFD7);
+}
+
+.gallery{
+  position: relative;
+  height: auto;
+  width: 90%;
+  min-width: 200px;
+  margin: auto;
+  padding: 25px;
+  display: grid;
+  grid-template-columns: auto auto auto;
+  grid-gap: 1.5vh;
+  grid-auto-flow: dense;
+  background: #6495ed63;
+}
+
+.gallery .images{
+  position: relative;
+  height: 100%;
+  width: 100%;
+  overflow: hidden;
+}
+
+.gallery .images:first-child{
+  grid-column-start: span 2;
+  grid-row-start: span 2;
+}
+
+.gallery .images img{
+  height: 100%;
+  width: 100%;
+  min-width: 50%;
+  object-fit: cover;
+  filter: brightness(1) grayscale(1);
+  transition: 0.3s ease-in-out;
+}
+
+.gallery .images:hover img{
+  filter: brightness(1) grayscale(0);
+}
+
+.bear img{
+  width: 100%;
+  min-width: 50%;
+  border-radius: 55px;
+}
+
+#dino img{
+  width: 50px;
+  min-width: 20%;
+}
