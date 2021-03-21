@@ -1,0 +1,50 @@
+
+body{
+  background: black;
+  background-image: url(../img/sky-line.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  max-height: 50%;
+}
+
+#top-menu, .date{
+  color: black
+}
+
+.far-right{
+  float: right;
+}
+
+#content-box{
+  width: 40%;
+  display: inline-block;
+  position: absolute;
+  bottom: 34px;
+  left: 52px;
+  padding: 30px;
+  text-align: left;
+}
+
+.date{
+  width: 40%;
+  display: inline-block;
+  bottom: 240px;
+  padding: 30px;
+  padding-left: 0px;
+  font-size: 190px;
+  font-weight: bolder;
+  font-family: 'Spartan', sans-serif;
+
+}
+
+.paragraph{
+  font-family: 'Brygada 1918', serif;
+  line-height: 25px;
+  font-size: 0.45cm;
+}
+
+#container{
+  color: white;
+}
