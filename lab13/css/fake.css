@@ -13,6 +13,10 @@ body{
   color: black
 }
 
+#top-menu{
+  font-size: 14px;
+}
+
 .far-right{
   float: right;
 }

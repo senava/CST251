@@ -1,0 +1,118 @@
+
+
+body{
+  background-color: cornflowerblue;
+  background-image: url(../img/moon.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  max-height: 50%;
+}
+
+.title{
+  width: 500px;
+  height: auto;
+  margin: 55px auto;
+  border-radius: 25px;
+  background-color: #8E6BBFcf;
+}
+
+.major-section{
+  display: inline-block;
+  right: 150px;
+  margin: 10px;
+  width: 95%;
+  min-width: 300px;
+  border: double 5px #E0C4F2;
+  border-radius: 25px;
+  padding: 20px;
+  background-image: linear-gradient(#83648Cbf,#622773bf,#4A1259bf,#350C40bf,#200726bf);
+}
+
+h1{
+  text-align: center;
+  border: dashed 3px;
+  border-radius: 25px;
+  padding: 4px;
+  font-family: 'Bad Script', cursive, sans-serif;
+  font-size: 35px;
+  color: #DED0F2;
+}
+
+h2{
+  font-family: 'Crafty Girls', cursive, sans-serif;
+  padding: 5px;
+  font-size: 30px;
+  margin-bottom: 5px;
+  color: #DED0F2;
+}
+
+p, figcaption{
+  font-family: 'Happy Monkey', cursive, sans-serif;
+  padding: 5px;
+  line-height: 20px;
+  color: #e4a0ff;
+}
+
+figcaption{
+  color: white;
+}
+
+a{
+  font-family: 'Londrina Outline', cursive, sans-serif;
+  font-size: 30px;
+  margin: 20px;
+  margin-top: 30px;
+  color: #190F26;
+  padding: 10px;
+  text-decoration: none;
+}
+
+ul{
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  top: 0;
+  overflow: hidden;
+  position: sticky;
+  background-image: linear-gradient(187deg, #EDE9F2eb,#DED0F2eb,#D2BBF2eb,#AE8FD9eb,#8E6BBFeb);
+
+}
+
+li{
+  float: left;
+}
+
+li a{
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+.screenshot{
+  width: 800px;
+  height: 500px;
+  resize: both;
+  overflow: hidden;
+}
+
+.screenshot img{
+  width: 100%;
+  max-width: 100%;
+}
+
+iframe#fake {
+    width: 800px;
+    height: 500px;
+    resize: both;
+    overflow: hidden;
+}
+
+li a{
+  color: white;
+  font-size: 20px;
+  font-family: 'Happy Monkey', cursive, sans-serif;
+}
