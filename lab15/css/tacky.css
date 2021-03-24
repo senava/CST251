@@ -1,0 +1,105 @@
+
+body{
+  background-color: #b0ffff;
+  background-image: url(../img/cloudy.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  max-height: 50%;
+}
+
+.title{
+  width: 500px;
+  height: auto;
+  margin: 55px auto;
+  border-radius: 5px;
+  background-image: radial-gradient(circle,#F2A88D,#F29966,#F2AA6B,#D96281,#D94854);
+  box-shadow: 11px 7px 18px 0px #3a2f2e;
+}
+
+.description{
+  width: 500px;
+  height: auto;
+  margin: 55px auto;
+  border-radius: 5px;
+  background-color: #bce69fc2;
+  box-shadow: 12px 15px 17px 1px #c5a08a;
+}
+
+p{
+  font-size: 25px;
+  font-family: 'Indie Flower', cursive, sans-serif;
+  text-align: center;
+
+}
+
+h1{
+  text-align: center;
+  text-shadow: 11px 15px 9px #545454b3;
+  border: solid 2.5px;
+  border-radius: 5px;
+  padding: 7px;
+  font-family: 'Gloria Hallelujah', cursive, sans-serif;
+  font-size: 60px;
+  color: #581A73;
+  letter-spacing: 0.18em;
+}
+
+b{
+  color: blue;
+}
+
+.container{
+  text-align: center;
+}
+
+.item:hover{
+  filter: drop-shadow(33px 33px 28px) invert(1);
+  transform: scale(0.75, 0.75) rotate(-14deg);
+  transition: all 0.35s;
+}
+
+.img-gallery{
+  display: grid;
+  grid-template-columns: repeat(1, 1fr);
+  grid-template-rows: repeat(5, 300px);
+  grid-auto-flow: row dense;
+}
+
+.gallery{
+  background: white;
+  padding: 1rem;
+  box-shadow: 20px 10px 15px 4px rgba(0,0,0,50%);
+}
+
+.gallery img{
+  width: 100%;
+  height: auto;
+}
+
+.item{
+  width: 25%;
+  display: inline-block;
+  margin-top: 5px;
+}
+
+div#boi, #monster, #meh, #vacation{
+  background-image: radial-gradient(#BF3073,#D9A404,#F27405,#D93030,#0D0D0D);
+}
+
+div#squirrel, #shee, #no{
+  background-image: radial-gradient(#F24B59,#F2B3CA,#F2D64B,#F2C777,#D91414);
+}
+
+div#mouse, #man{
+  background-image: radial-gradient(#260A15,#591D33,#8C3B59,#D94188,#A6376B);
+}
+
+div#mike, #pascal, #wack{
+  background-image: radial-gradient(#2E34A6,#5058F2,#347317,#C3D91E,#F23D3D);
+}
+
+div#night, #bunny, #pe{
+  background-image: radial-gradient(#D9043D,#033E8C,#F2B705,#F28705,#D90404);
+}
