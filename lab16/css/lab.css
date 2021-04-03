@@ -1,0 +1,247 @@
+
+*{
+  box-sizing: border-box;
+}
+
+.cloud img{
+  height: 8.5vw;
+  width: auto;
+  position: relative;
+  animation: cloud 8s linear 2s infinite alternate;
+}
+
+@keyframes cloud{
+  from{
+    left: 0%;
+    top: 0px;
+  }
+  to{
+    left: 88%;
+    top: 0px;
+  }
+}
+
+body{
+  background-image: url(../img/hai.png), url(../img/bee.png), url(../img/snowy-sky.jpg);
+  background-repeat: no-repeat, no-repeat, no-repeat;
+  background-size: 10vw, 10vw, cover;
+  background-position: left top, right top, center;
+}
+
+header{
+  background-image: radial-gradient(circle, #F2F2F2e6, #E4C2F2c7, #BF82D9d1, #8538A6c2);
+  width: 500px;
+  height: auto;
+  margin: 50px auto;
+  border-radius: 15px;
+}
+
+h1{
+  font-family: 'Happy Monkey', cursive, sans-serif;
+  text-align: center;
+  outline-style: dotted;
+  outline-offset: 5px;
+  outline-width: 5px;
+}
+
+h2, p{
+  font-family: 'Indie Flower', cursive, sans-serif;
+}
+
+h2{
+  text-align: center;
+}
+
+p{
+  padding: 10px;
+  text-align: left;
+  font-size: 16px;
+}
+
+b{
+  font-size: 25px;
+}
+
+#results b{
+  font-size: 20px;
+  color: red;
+}
+
+
+#content{
+  display: flex;
+  flex-wrap: nowrap;
+  background-color: white;
+  transition: 2s;
+}
+
+article{
+  background-color: pink;
+  width: 33.33%;
+  margin: 10px;
+  font-size: 20px;
+  transition: transform 2s;
+}
+
+#content:hover,
+.columns:hover{
+  background-color: #A7D5F2;
+  transform: none;
+}
+
+.minor-section:hover{
+  background-color: #A6448Cb6;
+  transform: none;
+}
+
+.main-section{
+  outline-style: dotted;
+  outline-offset: 10px;
+  border: 3px solid black;
+  margin: 10px;
+  padding: 25px;
+}
+
+.columns{
+  background-color: white;
+  padding: 10px;
+  margin-top: 25px;
+  transition: 2s;
+}
+
+.columns p{
+  column-count: 4;
+}
+
+.columns h2{
+  font-size: 30px;
+}
+
+.container{
+  position: relative;
+  background: linear-gradient(90deg, #4ad2fb, #ff89d0, #f5e770,#ff89d0, #4ad2fb);
+  padding: 5px;
+  margin-bottom: 10px;
+  width: 180px;
+  text-align: center;
+  background-size: 300%;
+  border-radius: 50px;
+}
+
+.container a{
+  text-decoration: none;
+  line-height: 55px;
+  color: white;
+  font-size: 25px;
+  font-family: 'Crafty Girls', cursive, sans-serif, sans-serif;
+}
+
+.container:hover{
+  animation: button 10s linear infinite;
+}
+
+@keyframes button{
+  from{
+    background-position: 0%;
+  }
+  to{
+    background-position: 300%;
+  }
+}
+
+.polaroid{
+  text-align: center;
+}
+
+#pika, #tommy, #tubbo, #bear{
+  transition: transform 5s cubic-bezier(0.59, 0.1, 0.04, 1.36);
+}
+
+.polaroid #pika:hover,
+.polaroid #tubbo:hover{
+  transform: rotate(25deg);
+  background-color: #7ED9D0;
+}
+
+.polaroid #tommy:hover,
+.polaroid #bear:hover{
+  transform: rotate(-25deg);
+  background-color: #7ED9D0;
+}
+
+figure{
+  width: 150px;
+  height: auto;
+  position: relative;
+  background-color: #ecddff;
+  padding: 10px 10px 35px 10px;
+  display: inline-block;
+}
+
+figure img{
+  width: 100%;
+}
+
+figure::before, figure::after{
+  content:"";
+  position: absolute;
+  height: 30px;
+  width: 85px;
+  background-color: #9980BF91;
+  transform: rotate(318deg);
+}
+
+figure::before{
+  top: 4px;
+  left: -30px;
+}
+
+figure::after{
+  bottom: 8px;
+  right: -30px;
+}
+
+.icons ul{
+  display: inline-block;
+  list-style: none;
+  padding: 5px;
+}
+
+.icons ul li{
+  width: 55px;
+  height: 55px;
+  line-height: 55px;
+  margin: 0px 15px;
+  text-align: center;
+  border: 3px solid white;
+  border-radius: 50%;
+  float: right;
+  background-color: #CEB3FF;
+}
+
+.icons ul li i{
+  color: white;
+  margin-top: 12px;
+}
+
+.icons ul li:hover{
+  background: linear-gradient(#e399ff, #ba95e8, #ac9bff, #7681e8);
+  animation: rotate 1.5s linear infinite;
+}
+
+@keyframes rotate {
+  0%{
+    filter: hue-rotate(0deg);
+  }
+  100%{
+    filter: hue-rotate(360deg);
+  }
+}
+
+/*
+include:
+ -Animation
+ -Transitions(2 ex. of diff. transitions)
+ -more backgrounds
+ -columns
+*/
