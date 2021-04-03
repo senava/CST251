@@ -237,11 +237,3 @@ figure::after{
     filter: hue-rotate(360deg);
   }
 }
-
-/*
-include:
- -Animation
- -Transitions(2 ex. of diff. transitions)
- -more backgrounds
- -columns
-*/

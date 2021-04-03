@@ -1,0 +1,133 @@
+/*
+Go back and use some of these effects on your CST251 homepage.
+
+Create a new page that uses some or all of these effects to create the most
+tacky page ever. Link from your lab.
+
+Create a new page that uses some or all of the effects in a subtle way to
+create the classiest page ever. Link from your lab.
+*/
+
+body{
+  background-image: url(../img/flower.png), url(../img/gold-flower.png), url(../img/feather.jpg);
+  background-repeat: no-repeat, no-repeat, no-repeat;
+  background-size: 150px, 150px, cover;
+  background-position: left top, right bottom, center;
+  background-attachment: fixed;
+}
+
+header{
+  width: 40vw;
+  height: auto;
+  margin: 50px auto;
+  border-radius: 5px;
+  background-image: radial-gradient(circle, #F2ECE9c7, #F2D2B6c7, #D9B19Ac7, #A6806Ac7);
+  transition: transform 4s;
+}
+
+h1{
+  font-family: 'Satisfy', cursive, sans-serifs;
+  text-align: center;
+}
+
+header:hover{
+  transform: translateX(50px);
+}
+
+.main-section{
+  outline-color: #735645;
+  outline-style: solid;
+  outline-offset: 5px;
+  border: 3px solid #A6806A;
+  margin: 10px;
+  padding: 25px;
+}
+
+.wrapper img{
+  height: 80px;
+}
+
+.left{
+  display: inline-block;
+  transition: transform 5s ease-out;
+}
+
+.left:hover{
+  transform: rotate(45deg);
+}
+
+.right{
+  display: inline-block;
+  float: right;
+  transition: transform 5s ease-out;
+}
+
+.right:hover{
+  transform: rotate(-45deg);
+}
+
+h2{
+  text-align: center;
+  font-size: 25px;
+  font-family: 'Patrick Hand', cursive, sans-serifs;
+}
+
+p{
+  padding: 10px;
+  text-align: left;
+  font-size: 18px;
+  text-align: center;
+}
+
+b{
+  line-height: 45px;
+  font-weight: normal;
+  font-size: 20px;
+  color: white;
+}
+
+#content{
+  display: flex;
+  flex-wrap: nowrap;
+}
+
+article{
+  background-color: #D9BBA9;
+  width: 33.33%;
+  margin: 10px;
+  font-size: 20px;
+  transition: transform 2s;
+}
+
+.button{
+  padding-top: 15px;
+}
+
+.button a{
+  text-decoration: none;
+  text-align: center;
+  color: white;
+  font-size: 20px;
+  padding: 12px 36px;
+  border-radius: 40px;
+  background-image: linear-gradient(90deg, #BFA995, #BFA995, #734226, #BFA995, #BFA995);
+  background-size: 300%;
+}
+
+.button a:hover{
+  animation: button 10s linear infinite;
+}
+
+@keyframes button{
+  from{
+    background-position: 0%;
+  }
+  to{
+    background-position: 300%;
+  }
+}
+
+.float-right{
+  display: inline-block;
+  float: right;
+}
