@@ -129,6 +129,7 @@ article{
 }
 
 .container a{
+  display: inline-block;
   text-decoration: none;
   line-height: 55px;
   color: white;
@@ -201,6 +202,10 @@ figure::after{
   right: -30px;
 }
 
+.icons{
+  display: inline-block;
+}
+
 .icons ul{
   display: inline-block;
   list-style: none;
@@ -236,4 +241,26 @@ figure::after{
   100%{
     filter: hue-rotate(360deg);
   }
+}
+
+.float-right{
+  margin-top: 30px;
+  display: inline-block;
+  float: right;
+}
+
+.float-right a{
+  text-decoration: none;
+  text-align: center;
+  color: white;
+  font-size: 20px;
+  padding: 12px 36px;
+  border: 3px solid white;
+  border-radius: 40px;
+  background: #CEB3FF;
+}
+
+.float-right a:hover{
+  background: linear-gradient(#e399ff, #ba95e8, #ac9bff, #7681e8);
+  animation: rotate 2s linear infinite;
 }
