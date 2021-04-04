@@ -1,0 +1,191 @@
+
+body{
+  background-image: url(../img/retro.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+}
+
+h1{
+  margin: 0;
+  padding: 0;
+  text-align: center;
+  animation: title 5s linear infinite;
+}
+
+@keyframes title{
+  0%, 100%{
+    color: #fff;
+    filter: blur(2px);
+    text-shadow: 0 0 10px #00b3ff,
+                 0 0 20px #00b3ff,
+                 0 0 40px #00b3ff;
+  }
+  5%, 90%{
+    color: #111;
+    filter: blur(0px);
+    text-shadow: 0 0 10px none;
+  }
+}
+
+header{
+  color: white;
+  font-size: 30px;
+  font-family: 'Train One', cursive, sans-serif;
+}
+
+.money img{
+  width: 10vw;
+  position: relative;
+  animation: money 8s linear 1s infinite alternate;
+}
+
+@keyframes money{
+  from{
+    left: 0%;
+    top: 0px;
+  }
+  to{
+    left: 88%;
+    top: 0px;
+  }
+}
+
+figure{
+  width: 150px;
+  height: auto;
+  position: relative;
+  background-color: #6dffdd;
+  padding: 10px 10px 35px 10px;
+  display: inline-block;
+}
+
+figure img{
+  width: 100%;
+}
+
+.polaroid{
+  text-align: center;
+}
+
+.polaroid #olaf:before,
+.polaroid #olaf:after,
+.polaroid #stitch:before,
+.polaroid #stitch:after,
+.polaroid #game:before,
+.polaroid #game:after,
+.polaroid #disney:before,
+.polaroid #disney:after{
+  content: '';
+  position: absolute;
+  left: -2px;
+  top: -2px;
+  background-image: linear-gradient(45deg, #e6fb04, #ff6600, #00ff66, #00ffff,
+    #ff00ff, #00ffff, #00ff66, #ff6600, #e6fb04);
+  background-size: 400%;
+  width: calc(100% + 5px);
+  height: calc(100% + 5px);
+  z-index: -1;
+  animation: animate 20s linear infinite;
+  filter: blur(5px);
+}
+
+@keyframes animate{
+  0%{
+    background-position: 0 0;
+  }
+  100%{
+    background-position: 400% 0;
+  }
+}
+
+.main-section{
+  background-image: url(../img/geometric.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-attachment: local;
+  outline-color: white;
+  outline-style: dotted;
+  outline-offset: 10px;
+  border: 3px solid white;
+  margin: 10px;
+  padding: 25px;
+}
+
+.left img{
+  height: 150px;
+  float: left;
+}
+
+.right img{
+  height: 150px;
+  float: right;
+}
+
+.text{
+  font-size: 70px;
+  font-family: 'Caveat', cursive, sans-serif;
+  text-align: center;
+  animation: stay 10s alternate infinite;
+}
+
+@keyframes stay{
+  0%, 100%{
+    text-shadow: 0 0 25px red;
+  }
+  25%{
+    text-shadow: 0 0 25px orange;
+  }
+  50%{
+    text-shadow: 0 0 25px forestgreen;
+  }
+  75%{
+    text-shadow: 0 0 25px cyan;
+  }
+}
+
+.video-game{
+  height: 350px;
+  width: 100%;
+  margin-top: 25px;
+  background-image: url(../img/video-game.gif);
+  background-size: cover;
+  background-position: center;
+  position: relative;
+  overflow-x: hidden;
+}
+
+.button{
+  padding-top: 15px;
+  padding-bottom: 15px;
+}
+
+.float-right{
+  display: inline-block;
+  float: right;
+}
+
+.button a{
+  text-decoration: none;
+  text-align: center;
+  color: black;
+  font-size: 20px;
+  padding: 12px 36px;
+  border-radius: 40px;
+  background-image: linear-gradient( 90deg, #14ffe9, #ffeb3b, #ff00e0);
+  background-size: 300%;
+}
+
+.button a:hover{
+  animation: button 10s linear infinite;
+}
+
+@keyframes button{
+  from{
+    background-position: 0%;
+  }
+  to{
+    background-position: 300%;
+  }
+}
