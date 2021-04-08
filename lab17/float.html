@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="css/float.css">
+    <link rel="stylesheet" type="text/css" href="css/contact.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link rel="stylesheet"
+    href="https://fonts.googleapis.com/css2?family=Architects+Daughter&family=Courgette&family=Indie+Flower&display=swap">
+    <title>Lab 17: CSS Layout</title>
+  </head>
+
+  <body>
+    <div class="first">
+      <div class="top">
+        <div class="title">
+          <h1>Lab 17: CSS Layout</h1>
+        </div>
+      </div>
+
+      <div class="top-content" id="home">
+        <header class="right">
+          <ul>
+            <li><a href="#contact">Contact</a></li>
+            <li><a href="#middle">Lab Content</a></li>
+            <li><a href="#home">Home</a></li>
+          </ul>
+
+          <div class="picture">
+            <img src="img/parrot.gif" alt="pond">
+          </div>
+        </header>
+      </div>
+    </div>
+
+    <main class="major-section">
+      <article class="minor-section" id="between">
+        <section class="sidebar">
+          <aside class="labs">
+            <p><a href="#">TBA</a></p>
+            <p><a href="#">TBA</a></p>
+            <p><a href="#">TBA</a></p>
+            <p><a href="#">TBA</a></p>
+          </aside>
+        </section>
+
+        <div class="content" id="middle">
+          <section class="challenge">
+            <h2>Challenge</h2>
+            <p>For this lab, we are working with our partners. Creating a layout
+               by incorporating each of the CSS layout tools, giving our page a
+               different look to it.</p>
+          </section>
+          <section class="problems">
+            <h2>Problems</h2>
+            <p>I didn't really run into any major problems. The only problem I
+            ran into for the float.html was figuring out how to make the
+            elemtns float properly and in the correct direction, as well as
+            having the exact height I wanted them to be. I was soon able to
+            figure it out by using CodePen and seeing how I had to style it.</p>
+          </section>
+          <section class="results">
+            <h2>Results</h2>
+            <p>Here are my results for the Float.html part of the assignment.
+            Everything seemed to turn out pretty well and how I sketched it out
+            on my notebook. I am mostly proud of being able to have the images,
+            at the botom of my page, be able to change images once hovered over
+            them.</p>
+          </section>
+        </div>
+      </article>
+
+      <figure class="images">
+        <div class="box">
+          <img src="img/lights.jpg" width="200" alt="">
+          <img class="hover-img" src="img/van.jpg" width="200" alt="">
+        </div>
+        <div class="box">
+          <img src="img/shaders.jpg" width="200" alt="">
+          <img class="hover-img" src="img/flag.jpg" width="200" alt="">
+        </div>
+        <div class="box">
+          <img src="img/mountain.jpg" width="200" alt="">
+          <img class="hover-img" src="img/city-night.jpg" width="200" alt="">
+        </div>
+        <div class="box">
+          <img src="img/lmanburg.jpeg" width="200" alt="">
+          <img class="hover-img" src="img/snow.jpg" width="200" alt="">
+        </div>
+      </figure>
+    </main>
+
+    <nav class="links">
+      <p><a href="../index.html">\o/Home Page\o/</a></p>
+      <p><a href="css/float.css">CSS for Page</a></p>
+      <p><a href="css/contact.css">Contact Info CSS</a></p>
+      <p><a href="index.html">Original</a></p>
+      <p><a href="float.html">Float</a></p>
+      <p><a href="#">Flexbox</a></p>
+      <p><a href="#">Grid</a></p>
+    </nav>
+
+    <section>
+      <footer class="container" id="contact">
+        <div class="card">
+          <div class="info">
+            <div class="imgbox">
+              <img src="img/blob.jpg" alt="blob" width="200px">
+            </div>
+            <div class="infobox">
+              <h2>Contact Information</h2>
+            </div>
+          </div>
+
+          <ul class="icon">
+            <li><i class="material-icons">computer</i>
+              <span>https://senava.github.io/cst251/</span>
+            </li>
+            <li><i class="material-icons">email</i>
+              <span>stnava@csumb.edu</span>
+            </li>
+            <li><i class="material-icons">public</i>
+              <span>Seaside CA, 93955</span>
+            </li>
+          </ul>
+        </div>
+      </footer>
+    </section>
+  </body>
+</html>

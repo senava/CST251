@@ -1,0 +1,15 @@
+
+/*body{
+  background-color: black;
+  background-image: url(../img/moon.png), url(../img/sun.png),
+  url(../img/stars.gif);
+  background-repeat: no-repeat, no-repeat, no-repeat;
+  background-size: 100px, 100px, cover;
+  background-position: top left, top right, center;
+  background-attachment: fixed;
+}
+*/
+
+header, nav, section, figure, footer{
+  border: 2px solid black;
+}

@@ -1,0 +1,187 @@
+
+body{
+  background-color: black;
+  background-image: url(../img/moon.png), url(../img/sun.png),
+  url(../img/stars.gif);
+  background-repeat: no-repeat, no-repeat, no-repeat;
+  background-size: 100px, 100px, cover;
+  background-position: top left, top right, center;
+  background-attachment: fixed;
+}
+
+.first:before,
+.first:after{
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.top{
+  float: left;
+  background: pink;
+  width: 100px;
+  height: 350px;
+  text-align: center;
+  padding: 10px;
+}
+
+h1{
+  font-family: 'Courgette', cursive, sans-serif;
+  font-size: 34px;
+}
+
+.top-content{
+  float: right;
+  width: 85%;
+  height: 350px;
+  min-width: 200px;
+}
+
+.right{
+  padding: 10px;
+  font-family: 'Architects Daughter', cursive, sans-serif;
+  font-size: 20px;
+}
+
+.right ul{
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #ffb093eb;
+  height: 40px;
+}
+
+.right li{
+  width: 33%;
+  height: 30px;
+  float: right;
+  text-align: center;
+  padding-top: 10px;
+}
+
+.right li a{
+  color: black;
+  text-align: center;
+  text-decoration: none;
+}
+
+.right li:hover{
+  background-color: #b2ebfb;
+}
+
+.picture{
+  text-align: center;
+  width: 100%;
+  height: 300px;
+  margin-top: 20px;
+  overflow: hidden;
+}
+
+.picture img{
+  object-fit: cover;
+  width: 100%;
+}
+
+#between{
+  margin-top: 50px;
+}
+
+.challenge, .problems, .results{
+  background: lightblue;
+  height: 250px;
+  width: 80%;
+}
+
+.content{
+  padding-left: 5%;
+}
+
+h2{
+  font-family: 'Architects Daughter', cursive, sans-serif;
+  font-size: 40px;
+  text-align: center;
+}
+
+p{
+  font-family: 'Architects Daughter', cursive;
+  font-size: 15px;
+  padding-left: 20px;
+}
+
+.sidebar{
+  float: right;
+  background-color: lightblue;
+  width: 15%;
+  height: 490px;
+  text-align: center;
+}
+
+.box{
+  text-align: center;
+  position: relative;
+  width: 190px;
+  height: 190px;
+  display: inline-block;
+  overflow: hidden;
+  margin: 5px;
+  border: 2px solid white;
+}
+
+.box img{
+  object-fit: cover;
+  height: 190px;
+  width: 190px;
+  transition: linear 1s;
+}
+
+.box img:hover{
+  opacity: 0;
+}
+
+img.hover-img{
+  position: absolute;
+  top: 0;
+  left: 0;
+  opacity: 0;
+}
+
+.box:hover img.hover-img{
+  opacity: 1;
+}
+
+.links{
+  float: right;
+  background: #fdb89ff0;
+  margin-top: 25px;
+  margin-right: 50px;
+  width: 50%;
+  height: 400px;
+  min-width: 200px;
+  text-align: center;
+}
+
+.links a{
+  font-size: 10px;
+}
+
+.links a{
+  position: relative;
+  color: #2196f3;
+  text-transform: uppercase;
+  letter-spacing: 4px;
+  text-decoration: none;
+  font-size: 20px;
+  line-height: 30px;
+  overflow: hidden;
+  transition: 0.2s;
+  padding: 10px;
+}
+
+.links a:hover{
+  color: #F29966;
+  background: #D96281;
+  border-radius: 20px;
+  box-shadow: 0 0 10px #F29966, 0 0 40px #D96281, 0 0 80px #D94854;
+  transition-delay: 0.5s;
+}
