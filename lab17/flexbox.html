@@ -3,8 +3,7 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" type="text/css" href="css/float.css">
-    <link rel="stylesheet" type="text/css" href="css/contact.css">
+    <link rel="stylesheet" type="text/css" href="css/flexbox.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link rel="stylesheet"
@@ -13,27 +12,27 @@
   </head>
 
   <body>
-    <div class="first">
-      <div class="top">
-        <div class="title">
-          <h1>Lab 17: CSS Layout</h1>
+      <div class="first">
+        <div class="top">
+          <div class="title">
+            <h1>Lab 17: CSS Layout</h1>
+          </div>
+        </div>
+
+        <div class="top-content" id="home">
+          <header class="right">
+            <ul>
+              <li><a href="#contact">Contact</a></li>
+              <li><a href="#middle">Lab Content</a></li>
+              <li><a href="#home">Home</a></li>
+            </ul>
+
+            <div class="picture">
+              <img src="img/parrot.gif" alt="pond">
+            </div>
+          </header>
         </div>
       </div>
-
-      <div class="top-content" id="home">
-        <header class="right">
-          <ul>
-            <li><a href="#contact">Contact</a></li>
-            <li><a href="#middle">Lab Content</a></li>
-            <li><a href="#home">Home</a></li>
-          </ul>
-
-          <div class="picture">
-            <img src="img/parrot.gif" alt="pond">
-          </div>
-        </header>
-      </div>
-    </div>
 
     <main class="major-section">
       <article class="minor-section" id="between">
@@ -79,29 +78,21 @@
             <h2>Challenge</h2>
             <p>For this lab, we are working with our partners. Creating a layout
                by incorporating each of the CSS layout tools, giving our page a
-               different look to it. This was my take on the Float Layout part
+               different look to it. This was my take on the Flexbox Layout part
                of the assignment.</p>
           </section>
           <section class="problems">
             <h2>Problems</h2>
-            <p>I didn't really run into any major problems. The only problem I
-            ran into for the float.html was figuring out how to make the
-            elemtns float properly and in the correct direction, as well as
-            having the exact height I wanted them to be. I was soon able to
-            figure it out by using CodePen and seeing how I had to style it.
-            Another problem I ran into, while trying to style my aside bar, was
-            figuring how to keep the sizes of my thumbnails without making them
-            overflow. I tried every possible way to fix it, but wasn't able to
-            figure out how to solve it. I might ask the professor next time I
-            have the class.</p>
+            <p>Working on the Flexbox layout was a bit more easier than the
+            Float layout one. I was able to get the concept of using flexbox,
+            and it was pretty easy getting every element in the places I wanted
+            them to be.</p>
           </section>
           <section class="results">
             <h2>Results</h2>
-            <p>Here are my results for the Float.html part of the assignment.
+            <p>Here are my results for the Flexbox.html part of the assignment.
             Everything seemed to turn out pretty well and how I sketched it out
-            on my notebook. I am mostly proud of being able to have the images,
-            at the botom of my page, be able to change images once hovered over
-            them.</p>
+            on my notebook. I am really proud in the way it turned out.</p>
           </section>
         </div>
       </article>
@@ -132,43 +123,42 @@
     <!--Links to some of the assignments for this lab. (Other pages I had to
     create) As well as the CSS file and Home Page-->
 
-    <div class="jump-to">
+    <div class=flex-container>
       <nav class="links">
         <p><a href="../index.html">\o/Home Page\o/</a></p>
-        <p><a href="css/float.css">CSS for Page</a></p>
-        <p><a href="css/contact.css">Contact Info CSS</a></p>
+        <p><a href="css/flexbox.css">CSS for Page</a></p>
         <p><a href="index.html">Original</a></p>
         <p><a href="float.html">Float</a></p>
         <p><a href="flexbox.html">Flexbox</a></p>
         <p><a href="#">Grid</a></p>
       </nav>
-    </div>
 
-    <section>
-      <footer class="container" id="contact">
-        <div class="card">
-          <div class="info">
-            <div class="imgbox">
-              <img src="img/blob.jpg" alt="blob" width="200px">
+      <section>
+        <footer class="container" id="contact">
+          <div class="card">
+            <div class="info">
+              <div class="imgbox">
+                <img src="img/blob.jpg" alt="blob" width="200px">
+              </div>
+              <div class="infobox">
+                <h2>Contact Information</h2>
+              </div>
             </div>
-            <div class="infobox">
-              <h2>Contact Information</h2>
-            </div>
+
+            <ul class="icon">
+              <li><i class="material-icons">computer</i>
+                <span>https://senava.github.io/cst251/</span>
+              </li>
+              <li><i class="material-icons">email</i>
+                <span>stnava@csumb.edu</span>
+              </li>
+              <li><i class="material-icons">public</i>
+                <span>Seaside CA, 93955</span>
+              </li>
+            </ul>
           </div>
-
-          <ul class="icon">
-            <li><i class="material-icons">computer</i>
-              <span>https://senava.github.io/cst251/</span>
-            </li>
-            <li><i class="material-icons">email</i>
-              <span>stnava@csumb.edu</span>
-            </li>
-            <li><i class="material-icons">public</i>
-              <span>Seaside CA, 93955</span>
-            </li>
-          </ul>
-        </div>
-      </footer>
-    </section>
+        </footer>
+      </section>
+    </div>
   </body>
 </html>

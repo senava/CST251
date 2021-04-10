@@ -20,7 +20,7 @@
   height: 400px;
   background: #f2bde0e8;
   margin: 20px;
-  box-shadow: 0 15px 35px rgba(0, 0, 0, 0.2);
+  box-shadow: 4px 8px 35px rgb(255 255 255 / 26%);
   display: flex;
   justify-content: center;
   align-items: center;
@@ -84,6 +84,6 @@
 }
 
 .container .card:hover .icon li{
-  transform: translatex(-25px) translateY(-10px);
+  transform: translatex(-5px) translateY(-15px);
   opacity: 1;
 }

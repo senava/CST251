@@ -9,6 +9,7 @@ body{
   background-attachment: fixed;
 }
 
+
 .first:before,
 .first:after{
   content: "";
@@ -16,8 +17,24 @@ body{
   clear: both;
 }
 
+/*
+.top,
+.top-content,
+.sidebar,
+.content,
+.images,
+.links,
+.container{
+  border: solid 2px white;
+}
+*/
+
+.first{
+  display: flex;
+  justify-content: space-evenly;
+}
+
 .top{
-  float: left;
   background: pink;
   width: 100px;
   height: 350px;
@@ -31,9 +48,7 @@ h1{
 }
 
 .top-content{
-  float: right;
   width: 85%;
-  height: 350px;
   min-width: 200px;
 }
 
@@ -49,7 +64,6 @@ h1{
   padding: 0;
   overflow: hidden;
   background-color: #ffb093eb;
-  height: 40px;
 }
 
 .right li{
@@ -84,34 +98,18 @@ h1{
 }
 
 #between{
-  margin-top: 50px;
-}
-
-.challenge, .problems, .results{
-  background: lightblue;
-  width: 80%;
-}
-
-.content{
-  padding-left: 5%;
-}
-
-h2{
-  font-family: 'Architects Daughter', cursive, sans-serif;
-  font-size: 40px;
-  text-align: center;
-}
-
-p{
-  font-family: 'Architects Daughter', cursive, sans-serif;
-  font-size: 15px;
-  padding: 20px;
+  margin-top: 20px;
+  display: flex;
+  flex-direction: row-reverse;
+  flex-wrap: nowrap;
+  align-items: flex-start;
+  justify-content: space-around;
 }
 
 .sidebar{
   background: lightblue;
-  float: right;
-  width: 15%;
+  width: 150px;
+  margin-left: 15px;
 }
 
 .labs{
@@ -136,6 +134,27 @@ figcaption{
   font-family: 'Architects Daughter', cursive, sans-serif;
 }
 
+.content{
+  width: 80%;
+}
+
+.challenge, .problems, .results{
+  background: lightblue;
+  height: 250px;
+}
+
+h2{
+  font-family: 'Architects Daughter', cursive, sans-serif;
+  font-size: 40px;
+  text-align: center;
+}
+
+p{
+  font-family: 'Architects Daughter', cursive, sans-serif;
+  font-size: 15px;
+  padding: 20px;
+}
+
 .box{
   text-align: center;
   position: relative;
@@ -144,7 +163,7 @@ figcaption{
   display: inline-block;
   overflow: hidden;
   margin: 5px;
-  border: 2px solid white;
+  border: 4px solid #77acbb;
 }
 
 .box img{
@@ -170,23 +189,26 @@ img.hover-img{
 }
 
 .images{
-  clear: both;
-  text-align: center;
+  display: flex;
+  flex-direction: row-reverse;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  align-items: center;
 }
 
-.jump-to{
+.flex-container{
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.links{
   background: #fdb89ff0;
-  float: right;
-  width: 50%;
-  height: 400px;
+  margin-top: 25px;
+  min-width: 200px;
   text-align: center;
-  margin-top: 15px;
-}
-
-.links p{
-  font-family: 'Architects Daughter', cursive, sans-serif;
-  height: 0.2vh;
-  margin-top: 0;
+  width: 50%;
 }
 
 .links a{
@@ -208,4 +230,83 @@ img.hover-img{
   border-radius: 20px;
   box-shadow: 0 0 10px #F29966, 0 0 40px #D96281, 0 0 80px #D94854;
   transition-delay: 0.5s;
+}
+
+.container{
+  background: pink;
+  width: 300px;
+  margin: 40px 0;
+}
+
+.icon li{
+  color: white;
+  list-style: none;
+  font-family: 'Indie Flower', cursive, sans-serif;
+}
+
+.container .card{
+  position: relative;
+  width: 300px;
+  height: 450px;
+  background: #f2bde0e8;
+  justify-content: center;
+  align-items: center;
+}
+
+.container .card .info{
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  opacity: 0.5;
+  transition: 0.5s;
+}
+
+.container .card:hover .info{
+  opacity: 1;
+  transform: translateY(-20px);
+}
+
+.container .card .info .imgbox{
+  position: relative;
+  width: 145px;
+  height: 145px;
+  border: 15px solid rgba(0, 0, 0, 0.25);
+  border-radius: 50%;
+  overflow: hidden;
+  margin-top: 30px;
+}
+
+.container .card .info .imgbox img{
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.container .card .info .infobox h2{
+  color: blue;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  font-weight: 500;
+  font-size: 18px;
+  text-align: center;
+  margin: 20px 0 10px;
+  line-height: 1.1em;
+}
+
+.container .card .icon li{
+  list-style: none;
+  margin: 0 5px;
+  text-align: left;
+  transition: 0.5s;
+  opacity: 0;
+}
+
+.container .card:hover .icon li{
+  transform: translatex(-25px) translateY(-10px);
+  opacity: 1;
 }
