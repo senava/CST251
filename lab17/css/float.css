@@ -104,17 +104,37 @@ h2{
 }
 
 p{
-  font-family: 'Architects Daughter', cursive;
+  font-family: 'Architects Daughter', cursive, sans-serif;
   font-size: 15px;
   padding-left: 20px;
 }
 
 .sidebar{
+  background: lightblue;
   float: right;
-  background-color: lightblue;
   width: 15%;
-  height: 490px;
+}
+
+.labs{
   text-align: center;
+  padding-top: 15px;
+  position: relative;
+  overflow: hidden;
+}
+
+.labs img{
+  width: 100px;
+  height: 100px;
+  object-fit: cover;
+  max-width: 100%;
+  margin: 10px;
+  position: relative;
+}
+
+figcaption{
+  text-decoration: none;
+  color: #790808;
+  font-family: 'Architects Daughter', cursive, sans-serif;
 }
 
 .box{
@@ -163,9 +183,6 @@ img.hover-img{
 
 .links a{
   font-size: 10px;
-}
-
-.links a{
   position: relative;
   color: #2196f3;
   text-transform: uppercase;
