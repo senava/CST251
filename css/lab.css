@@ -1,0 +1,37 @@
+body{
+  background: cornflowerblue;
+  background-image: url("../img/night-sky.jpeg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+}
+
+img{
+  width: 250px;
+  border: dashed 4px white;
+  margin-left: 10px;
+}
+
+h1{
+  text-align: center;
+  border: dotted 5px #1823f7;
+  border-radius: 5px;
+  padding: 4px;
+  font-size: 35px;
+  background: #bcf4f5e3;
+}
+
+.content, nav{
+  background: #86b5fde3;
+}
+
+nav{
+  margin-top: 10px;
+  text-align: center;
+  font-size: 20px;
+}
+
+h2, h3, p{
+  margin-left: 30px;
+}

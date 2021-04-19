@@ -1,0 +1,63 @@
+
+body{
+  background-color: black;
+  background-image: url(../img/wave.gif);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+}
+.top-img{
+  margin-top: 50px;
+}
+
+.container-fluid {
+  border: solid transparent;
+}
+
+.col{
+  border: solid 2px black;
+}
+
+.col-sm-12, .col-sm-6, .col-sm-7, .col-sm-5{
+  text-align: center;
+  border: solid 1px black;
+  background-color: #5dc9f3e8;
+}
+
+.col-sm-12 img{
+  width: 100%;
+  object-fit: cover;
+  height: 200px;
+}
+
+.col.col-sm-12{
+  padding-left: 0;
+  padding-right: 0;
+}
+
+.col-sm-5 p{
+  text-align: left;
+}
+
+.chorus{
+  margin-top: 30px;
+}
+
+.carousel-inner img,
+.fanart img{
+  width: 100%;
+  height: 100%;
+}
+
+h1{
+  font-family: 'Courgette', cursive, sans-serif;
+}
+
+h5, p, a{
+  font-family: 'Architects Daughter', cursive, sans-serif;
+}
+
+h2{
+  font-family: 'Indie Flower', cursive, sans-serif;
+}
