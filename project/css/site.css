@@ -1,0 +1,123 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+img{
+  width: 200px;
+  vertical-align: initial!important;
+}
+
+.socials img{
+  width: 40px;
+}
+
+body{
+  background-color: antiquewhite!important;
+}
+
+.content{
+  position: relative;
+  min-width: 100%;
+}
+
+article, .images{
+  padding-bottom: 2.5rem;
+}
+
+.user, .essential{
+  display: flex;
+  align-items: center;
+}
+
+.user .material-icons{
+  font-size: 40px;
+  transform: translateX(-5px);
+}
+
+.essential .material-icons{
+  font-size: 30px;
+  -webkit-transform: rotate(90deg) translateY(5px);
+}
+
+#collapsibleNavbar{
+  justify-content: space-around;
+}
+
+nav.images{
+  display: flex!important;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-content: center;
+  justify-content: space-evenly;
+}
+
+.greeting{
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: flex-start;
+  margin: 10px;
+  margin-top: 10vh;
+}
+
+.medium{
+  margin: 20px;
+  background-color: black;
+  width: 210px;
+  height: 210px;
+}
+
+.logo img{
+  width: 250px;
+  height: 100%;
+  object-fit: cover;
+  margin-right: 30px;
+}
+
+.intro{
+  display: flex;
+  flex-direction: row;
+  align-items: stretch;
+  margin-left: -11px;
+}
+
+.information{
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  align-items: flex-end;
+  justify-content: flex-start;
+  margin-left: -65px;
+}
+
+.wave img{ width: 50px;}
+
+.welcoming{
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  align-content: flex-start;
+  justify-content: flex-start;
+  align-items: flex-start;
+}
+
+.welcoming span{
+  font-size: 1.5vh;
+}
+
+@media screen and (max-width: 990px) {
+  .essential{
+    display: none;
+  }
+}
+
+footer {
+  padding: 15px;
+  display: flex!important;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: flex-start;
+  background-color: black;
+}
